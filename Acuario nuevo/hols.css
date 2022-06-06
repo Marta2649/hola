@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+header{
+	width: 100%;
+	
+}
+
+.navegacion{
+    /*Barra de menu*/
+	width: 80%;
+	margin: 20px auto;
+	background: #ca78ca;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+    /*Letra al pasar*/
+	color: #5f118d;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #ca78ca;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 45px;
+	color: #ffa4ff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+
+/*galeria*/
+body{
+    /*fondo*/
+    background-color: #F2C3FF;
+    font-family: sans-serif;
+   }
+   .container{
+       /*Hoja del menu*/
+    margin: auto;
+    background-color: #ffffff;
+    /*Hoja de fondo*/
+    width: 850px;
+    border-radius: 60px;
+    /*Largo de la hoja*/
+    padding: 40px;
+   }
+   
+   .containers{
+       /*Hoja del formulario*/
+    margin: auto;
+    background-color: #ffffff;
+    /*Hoja de fondo*/
+    width: 850px;
+    border-radius: 50px;
+    /*Largo de la hoja*/
+    padding: 80px;
+   }
+   
+   ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+   }
+   ul.slider{
+    position: relative;
+    width: 620px;
+    height: 420px;
+   }
+   ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#ffffff;
+   }
+   ul.slider li img{
+    width: 66%;
+    height: 195px;
+    align-self: center;
+
+    object-fit: cover;
+   }
+   ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+   }
+   ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+   }
+   .menu{
+    text-align: center;
+    margin: 23px;
+   }
+   .menu li{
+    display: inline-block;
+    text-align: center;
+   }
+   .menu li a{
+    display: inline-block;
+	/* Color de las letras muy importante */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+	/*color de fondo de los botones*/
+    background-color: #ca78ca;
+    padding: 15px;
+    width: px;
+	/* el ancho de la barra muy importante */
+    height: 35px;
+    font-size: 20px;
+    border-radius: 20%;
+    padding-top:15px;
+   }

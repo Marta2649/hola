@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+body{
+	background: #330366;
+}
+
+
+header{
+	width: 100%;
+	
+}
+
+.navegacion{
+	width: 100%;
+	margin: 30px auto;
+	background: rgb(202, 120, 202);
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #8e24cc;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #ca78ca;
+	width: 120vw;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #ca78ca;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #F2C3FF;
+}
+
+
+header{
+	height: 200vw;
+	width: 100vw;
+}
+
+.navegacion{
+	width: 210px;
+	margin: 20px auto;
+	background: #ca78ca;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #ffffff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #ffffff;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #ca78ca;
+	width: 270%;
+	height: 150%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: rgb(122, 26, 26);
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+/*galeria*/
+body{
+    background-color: #b248dc;
+    font-family: sans-serif;
+   }
+   .container{
+    background-color: rgb(255, 255, 255);
+    width: 200%; 
+    padding: 150px;
+   }
+   ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+   }
+   ul.slider{
+    position: relative;
+    width: 370;
+    height: 250px;
+   }
+   ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:rgb(255, 255, 255);
+   }
+   ul.slider li img{
+    width: 66%;
+    height: 195px;
+    align-self: center;
+
+    object-fit: cover;
+   }
+   ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+   }
+   ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+   }
+   .menu{
+    text-align: center;
+    margin: 33px;
+   }
+   .menu li{
+    display: inline-block;
+    text-align: center;
+   }
+   .menu li a{
+    display: inline-block;
+	/* Color de las letras muy importante */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+	/*color de fondo de los botones*/
+    background-color: #ca78ca;
+    padding: 5px;
+    width: px;
+	/* muy importante */
+    height: 42px;
+    font-size: 20px;
+    border-radius: 20%;
+    padding-top:25px;
+   }
